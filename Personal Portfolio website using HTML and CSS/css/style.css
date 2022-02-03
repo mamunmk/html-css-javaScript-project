@@ -73,7 +73,7 @@ header nav .branding {
   margin-top: -7rem;
 }
 section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 .about-me-img {
   height: 450px;
@@ -213,4 +213,112 @@ section.reviews .container .slide {
 section.reviews .container .slider img {
   width: 100px;
   height: 100px;
+}
+section.work .container h2,
+p {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  padding-bottom: 0.5rem;
+}
+section.work .container p {
+  padding-bottom: 2rem;
+}
+section.work {
+  background: var(--light);
+}
+section.work .container .card-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  padding: 2rem 6rem;
+}
+section.work .container .card-wrap .card {
+  position: relative;
+  width: 300px;
+  height: 250px;
+}
+section.work .container .card-wrap .card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(109, 188, 190, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  opacity: 0;
+}
+section.work .container .card-wrap .card .overlay:hover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+section.work .container .card-wrap .card img {
+  width: 100%;
+  height: 100%;
+}
+section.work .container .card-wrap .card .overlay a {
+  text-decoration: none;
+  color: var(--pure);
+}
+
+.bloger-container h2 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  padding-bottom: 1rem;
+  color: var(--light);
+}
+.bloger-container p {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  padding-bottom: 2rem;
+  color: var(--light);
+}
+.bloger {
+  background: var(--dark);
+  padding-bottom: 11rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 85%, 0 100%);
+}
+.bloger-container-heading span {
+  color: var(--primary);
+}
+.blog-card {
+  background: var(--pure);
+}
+.blog-card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-content span {
+  padding: 1rem;
+  color: var(--dark);
+}
+.blog-content h1 {
+  padding-left: 1rem;
+}
+.blog-content a {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.blog-content a:hover {
+  color: var(--primary);
+}
+.blog-content p {
+  padding: 1rem;
+  color: var(--dark);
+  text-align: left;
+}
+.bloger-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+}
+a.read-more {
+  padding: 0 0 0 1rem;
+  color: chocolate;
 }
