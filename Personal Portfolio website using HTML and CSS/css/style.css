@@ -1,0 +1,216 @@
+@import "utilities.css";
+:root {
+  --primary: #3dcfd3;
+  --dark: #161616;
+  --pure: #ffffff;
+  --ternary: #898989;
+  --light: #f2f2f2;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smotting: antialiased;
+}
+header {
+  background: var(--dark);
+  /* height: 700px; */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header nav .left a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+}
+header nav .left a:hover {
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+header nav {
+  padding: 2rem 0;
+}
+header nav .branding {
+  margin-right: 2rem;
+}
+.hero {
+  padding: 3rem 0;
+}
+.hero .left img {
+  width: 400px;
+}
+.hero .right {
+  color: var(--pure);
+}
+.hero .right h6 {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.hero .right h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.hero .right h1 span {
+  color: var(--primary);
+}
+.hero .right p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+.hero .right {
+  margin-top: -7rem;
+}
+section {
+  padding: 6rem 0;
+}
+.about-me-img {
+  height: 450px;
+}
+section.about h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+section.about h1 span {
+  color: var(--primary);
+}
+section.about h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+section.about p {
+  font-family: "Lato", sans-serif;
+  color: var(--ternary);
+  line-height: 1.9;
+}
+section.about .social {
+  /* padding-top: 1rem; */
+  margin-top: 1rem;
+}
+section.about .social a {
+  /* background: var(--dark); */
+  display: flex;
+  flex-direction: row;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+section.about .social a img {
+  width: 100%;
+  height: 100%;
+  padding: 0.2rem;
+}
+section.about .social a img:hover {
+  width: 110%;
+  height: 110%;
+  transition: all 0.4s ease;
+}
+section.service {
+  background: var(--light);
+}
+.section-heading {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5rem;
+}
+.section-heading span {
+  color: var(--dark);
+}
+.section-heading + p {
+  color: var(--ternary);
+  font-family: "Lato";
+  margin-bottom: 6rem;
+  text-align: center;
+}
+.container .card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 5rem;
+}
+.container .card-wrapper .card {
+  position: relative;
+  background: var(--pure);
+  padding: 3rem 1.5rem;
+  color: var(--ternary);
+}
+.container .card-wrapper .ee img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  background: var(--ternary);
+}
+.card-wrapper .card .ee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card-wrapper .card h2 {
+  padding-top: 2rem;
+  padding-bottom: 0.6rem;
+  color: var(--dark);
+}
+.container .card-wrapper .card:hover {
+  background: var(--dark);
+  transition: all 0.5s ease;
+}
+.container .card-wrapper .card:hover h2,
+.container .card-wrapper .card:hover p {
+  color: var(--light);
+}
+section.freelancer {
+  text-align: center;
+  color: var(--light);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/camera.png);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
+  padding-bottom: 13rem;
+  background-size: 100% 100%;
+}
+section.freelancer h1 {
+  font-size: 2rem;
+  padding-bottom: 0.8rem;
+  font-family: "Lato", sans-serif;
+}
+section.freelancer p {
+  padding-bottom: 1rem;
+  font-family: "Lato", sans-serif;
+}
+section.reviews .container h1,
+p {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  font-family: "Lato", sans-serif;
+}
+section.reviews .container p {
+  padding-bottom: 2rem;
+}
+section.reviews .container .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.reviews .container .slider img {
+  width: 100px;
+  height: 100px;
+}
