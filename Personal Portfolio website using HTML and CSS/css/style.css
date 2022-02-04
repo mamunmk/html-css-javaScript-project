@@ -408,6 +408,6 @@ h6 {
   display: flex;
   justify-content: center;
   font-family: "Lato", sans-serif;
-  color: var(--ternary);
+  color: #898989;
   padding: 0 0 2rem 0;
 }
