@@ -16,6 +16,7 @@
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.3s ease;
+  font-family: "Lato" sans-serif;
 }
 .btn-primary {
   color: var(--dark);
