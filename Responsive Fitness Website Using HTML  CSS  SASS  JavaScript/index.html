@@ -12,6 +12,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <!-- swiper slider cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <!-- custom css link -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -19,6 +24,7 @@
     <!-- header section start -->
     <header class="header">
       <a href="#" class="logo"><span>BE</span>FIT</a>
+      <div id="menu-btn" class="fas fa-bars"></div>
       <nav class="navbar">
         <a href="#home">home</a>
         <a href="#about">about</a>
@@ -32,23 +38,46 @@
 
     <!-- home sectiion start -->
     <section class="home" id="home">
-      <div class="home-slider">
-        <div class="wrapper">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper wrapper">
           <div
-            class="slide"
+            class="swiper-slide slide"
             style="background: url(./images/home-bg-1.jpg) no-repeat"
           >
             <div class="content">
               <span>be strong, be fit</span>
               <h3>make your self stronger than your excuses.</h3>
-              <a href="">get started</a>
+              <a href="#" class="btn">get started</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide slide"
+            style="background: url(./images/home-bg-2.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>be strong, be fit</span>
+              <h3>make your self stronger than your excuses.</h3>
+              <a href="" class="btn">get started</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide slide"
+            style="background: url(./images/home-bg-3.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>be strong, be fit</span>
+              <h3>make your self stronger than your excuses.</h3>
+              <a href="" class="btn">get started</a>
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <!-- home sectiion send -->
 
+    <!-- swiper js link -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- custom js file link -->
     <script src="js/script.js"></script>
   </body>
