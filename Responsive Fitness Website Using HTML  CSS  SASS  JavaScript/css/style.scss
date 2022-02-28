@@ -79,6 +79,30 @@ body {
 section {
   padding: 5rem 9%;
 }
+.heading {
+  text-align: center;
+  margin-top: 2rem;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(50%);
+    width: 100%;
+    height: 0.1rem;
+    z-index: -1;
+    background: $light-white;
+  }
+  span {
+    font-size: 3rem;
+    color: $red;
+    border: 0.1rem solid $light-white;
+    padding: 0.5rem 1.5rem;
+    background: $black;
+    border-radius: 0.5rem;
+  }
+}
 .btn {
   display: inline-block;
   margin-top: 1rem;
