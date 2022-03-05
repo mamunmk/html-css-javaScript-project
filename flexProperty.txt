@@ -10,3 +10,4 @@
 8. flex-shrink: 1(default 1 thake mane shrink kore), 0
 9. flex-basis: (flex-basis mane min-width. ai min-width always bojay rakhbe but responsive er jonno min-width komate parbe)
 10. (7+8+9) flex: flex-grow flex-shrink flex-basis
+11. (7+8+9) flex: flex-grow flex-shrink flex-basis
